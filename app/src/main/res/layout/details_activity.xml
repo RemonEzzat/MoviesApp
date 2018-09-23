@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/details_layout"
+   >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="@color/colorPrimaryDark"
+                android:background="@color/colorBlack"
+                >
+
+                <ImageView
+                    android:id="@+id/imageback"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_back_black"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    />
+
+            </android.support.v7.widget.Toolbar>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/textViewOriginalTitle"
+            android:textSize="20sp"
+            android:text="Title"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/image"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="fitXY"
+            />
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/textViewOverView"
+            android:textSize="20sp"
+            android:text="overview"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlue"
+            android:id="@+id/textViewVote_count"
+            android:textSize="20sp"
+            android:text="Title"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlue"
+            android:id="@+id/textViewpopularity"
+            android:textSize="20sp"
+            android:text="Title"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlue"
+            android:id="@+id/textViewRelease_date"
+            android:textSize="20sp"
+            android:text="Title"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
